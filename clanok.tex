@@ -1,0 +1,206 @@
+% Metódy inžinierskej práce
+
+\documentclass[10pt,twoside,slovak,a4paper]{article}
+
+\usepackage[slovak]{babel}
+%\usepackage[T1]{fontenc}
+\usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{url} % príkaz \url na formátovanie URL
+\usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
+
+\usepackage{cite}
+%\usepackage{times}
+
+\pagestyle{headings}
+
+\title{Zneužívanie gamifikácie vo vzdelávacích aplikáciách\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2022/23, vedenie: Ing. Vladimír Mlynarovič, PhD}} 
+
+\author{Patrícia Kovalčíková\\[2pt]
+	{\small Slovenská technická univerzita v Bratislave}\\
+	{\small Fakulta informatiky a informačných technológií}\\
+	{\small \texttt{xkovalcikovap@stuba.sk}}
+	}
+
+\date{\small 6. november 2022}
+
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+V dnešnej dobe sa gamifikácia pri vzdelávaní využíva pomerne často. Nie vždy je však použitá len s dobrým výsledným efektom. 
+
+Zneužívanie gamifikácie nastáva vtedy, keď sa používatelia príliš na ňu fixujú\cite{HadiMogavi2022}. Odvádzajú svoju pozornosť od učenia. Ich kvalita a efektivita učenia sa je negatívne ovplyvnená.
+
+Článok sa zameria na to, ako sa prvky gamifikácie (napr. body, odznaky, rebríčky, ...) môžu obrátiť v neprospech používateľa. Napríklad môže to viesť k menšej sebadôvere v učení, odradeniu od učenia, ukončeniu štúdia, psychickým či fyzickým problémom, narušeniu každodenných životných rutín, nespravodlivosti alebo podpore nesprávneho správania pri učení\cite{HadiMogavi2022}. 
+
+Článok sa zameria primárne na vzdelávaciu aplikáciu Duolingo. 
+
+\end{abstract}
+
+
+
+\section{Úvod}
+
+
+
+%Motivujte čitateľa a vysvetlite, o čom píšete. Úvod sa väčšinou nedelí na časti.
+%
+%Uveďte explicitne štruktúru článku. Tu je nejaký príklad.
+%
+%Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v časti~\ref{nejaka}.
+%Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitejsia}.
+%Záverečné poznámky prináša časť~\ref{zaver}.
+
+
+
+\section{Čo je to gamifikácia?} \label{Čo je to gamifikácia?}
+
+
+Gamifikácia je použitie herného dizajnu v nehernom kontexte\cite{Definition}. Jednotlivé prvky gamifikácie (napr. zbieranie bodov, získavanie odznakov, šplhanie sa v rebríčkoch, systém životov, virtuálne meny ako Drahokamy a Lingoty...) sú v tomto prípade využívané vo vzdelávaní. Základným cieľom týchto ocenení je povzbudiť jednotlivcov, aby vykonávali špecifické činnosti a dosahovali konkrétne úspechy\cite{Definition}.
+
+Hlavným cieľom využívania gamifikácie vo vzdelávaní je zvýšiť motiváciu študentov, angažovanosť a výkonnosť pri učení\cite{HadiMogavi2022}. 
+
+\subsection{Zneužitie gamifikácie} \label{Čo je to gamifikácia?:Zneužitie gamifikácie}
+
+Zneužívanie gamifikácie je jav, ku ktorému dochádza, keď používatelia príliš upriamia svoju pozornosť na gamifikáciu a nesústredia sa na učenie\cite{HadiMogavi2022}. To znamená, že sa snažia získať, čo najviac bodov aj na úkor svojich vedomostí. Alebo sa snažia dostať, čo najvyššie v rebríčku všetkých používateľov, pričom nehľadia na svoje vedomosti, ktoré mali touto cestou k vrcholu rebríčka získať. Neváhajú podvádzať s vidinou mať čo najlepšie výsledky medzi používateľmi.
+
+Tento nežiaduci jav mrhá drahocenným časom používateľov a negatívne ovplyvňuje ich výkon pri učení\cite{HadiMogavi2022}. Zabúdajú, že primárne začali používať vzdelávaciu aplikáciu na svoje vzdelávanie a nie hranie. Samotná gamifikácia sa môže stať novým zdrojom rozptýlenia od učenia \cite{negativegamification}.
+
+%Z obr.~\ref{f:rozhod} je všetko jasné. 
+%
+%\begin{figure*}[tbh]
+%\centering
+%\includegraphics[scale=1.0]{diagram.pdf}
+%Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
+%\caption{Rozhodujúci argument.}
+%\label{f:rozhod}
+%\end{figure*}
+
+\section{Duolingo} \label{Duolingo}
+Duolingo je bezplatná aplikácia na učenie sa cudzích jazykov. Aplikácia ponúka množstvo jazykov. Napríklad angličtinu, španielčinu, francúzštinu, nemčinu, taliančinu, čínštinu, ruštinu, dánčinu, maďarčina, arabčinu, japončinu, holandčinu, vietnamčinu, gréčtinu, švédčinu, latinčinu, poľštinu, ukrajinčinu, rumunčina, ...\cite{Duoplanet}  
+
+\subsection{Ako funguje gamifikácia v Duolingu?} \label{Duolingo:Ako funguje gamifikácia v Duolingu?}
+Duolingo ponúka svoje kurzy gamifikovanou formou. Aplikácia umožňuje sledovať pokrok používateľa vizuálne príťažlivým spôsobom\cite{HadiMogavi2022}. Jednotlivé lekcie sú tematicky zoskupené v rámci takzvaného „skill tree“ alebo zoznamu zručností, ako je znázornené na obrázku. \cite{Duolingo} %nájsť niečo lepšie
+
+Študenti sú za ukončenie každej lekcie ocenení bodmi. Za jednu lekciu môže študent získať 10 bodov, plus ďalšie 3 body za každý život, ktorý mu na konci lekcie ostane. V každej lekcii má študent 5 životov a za každú chybu o jeden z nich príde. Ak spraví chybu aj po tom, čo prišiel o všetky životy, musí si lekciu pre úspešné absolvovanie zopakovať. Každá lekcia pozostáva zo 14 – 20 otázok a trvá 4 – 7 minút. \cite{Duolingo} 
+
+Čím vyššie hodnotenie používateľ získa, tým vyššie v rebríčku sa umiestni. Na druhej strane používateľ môže v rebríčku aj klesnúť. Rebríčky sa obnovujú na týždennej báze.\cite{HadiMogavi2022}
+
+
+%pridať potom viac obrázkov na ukázanie týchto funkcii gamifikácie
+\includegraphics[scale=0.07]{strom1.jpg} %obrázok som vytvorila ja
+%\caption{Obr.1} %pozrieť vyššie v šablóne, ako to je urobené
+
+%Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
+
+%Môže sa zdať, že problém vlastne nejestvuje\cite{Games_and_Learning_Alliance}, ale bolo dokázané, že to tak nie je~\cite{HadiMogavi2022}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{HadiMogavi2022}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
+
+
+
+\section{Používatelia} \label{Používatelia}
+
+\subsection{Vedome} \label{Vedome}
+
+\subsection{Nevedome} \label{Nevedome}
+%porozmýšľať nad touto časťou, či nezmeniť na dôvody zneužitia gamifikácie
+
+
+
+
+\section{Vplyv} \label{Vplyv}
+
+\subsection{Psychické problémy} \label{Vplyv:Psychické problémy}
+
+Ako ukázala štúdia\cite{HadiMogavi2022} nesprávne použitá gamifikácia súvisí aj so psychikou používateľa. Psychické problémy z toho vyplývajúce sú spojené s učením a efektivitou učenia sa. V rozhovoroch v tejto štúdii jeden z respondentov vysvetľoval ako stratil svoju dôveru v učenie sa noveho jazyka. Bez podvádzania väčšina z jeho odpovedí bola nesprávna. Preto, aby sa vyšplhal na vyššie priečky rebríčka, začal podvádzať. Zneužitie gamifikácie otriaslo jeho dôverou k učeniu. 
+
+Iný účastník stratil 110 dňovú sériu úspechov, čo otriaslo jeho psychikou. Stratil motiváciu vzdelávať sa vo vzdelávacích aplikáciách. Viedlo to k ukončeniu štúdia v aplikácii.\cite{HadiMogavi2022}
+
+%pridať viac vplyvov
+
+
+
+%Niekedy treba uviesť zoznam:
+%
+%\begin{itemize}
+%\item jedna vec
+%\item druhá vec
+%	\begin{itemize}
+%	\item x
+%	\item y
+%	\end{itemize}
+%\end{itemize}
+%
+%Ten istý zoznam, len číslovaný:
+%
+%\begin{enumerate}
+%\item jedna vec
+%\item druhá vec
+%	\begin{enumerate}
+%	\item x
+%	\item y
+%	\end{enumerate}
+%\end{enumerate}
+
+
+\subsection{Fyzické problémy} \label{Vplyv:Fyzické problémy}
+
+Na prvý pohľad sa zdá, že gamifikácia nemá vplyv na fyzické zdravie. Opak je však pravdou. Ako ukázala štúdia\cite{HadiMogavi2022} aj gamifikácia vo vzdelávacích aplikáciách môže mať negatívny vplyv na fyzické zdravie.
+
+V rozhovoroch\cite{HadiMogavi2022} s dobrovoľníkmi, ktorí zažili zneužitie gamifikácie, jeden z respondentov opisoval, aké fyzické problémy mu to spôsobilo. 
+
+Aplikáciu Duolingo začal používať s cieľom zdokonaliť sa v cudzom jazyku. Po čase však prepadol súťaženiu s ostatnými používateľmi. Niekoľko hodín denne sa snažil dosiahnuť, čo najvyššie skóre, až sa mu to prejavilo na fyzickom zdraví. Trpel opakovaným namáhaním zápästia a ramena. Popri tom sa prestal sústrediť na vzdelávanie, ale sústredil sa len na skóre. 
+
+Iní používatelia zase hovorili o narušení každodenných životných rutín, ako napríklad zanedbávanie upratovania, zanedbávania domácich prác. Tento jav vznikol z toho dôvodu, že používanie aplikácie na vzdelávanie zaberá určitý čas. Ak sa používateľ viac sústredí na gamifikáciu ako na vzdelávanie môže stráviť vo vzdelávacej aplikácii viac času ako keď nie je negatívne ovplyvnený gamifikáciou. Toto malo negatívny vplyv nielen na nich samotných, ale aj na ich rodiny\cite{HadiMogavi2022}.
+
+%\paragraph{Veľmi dôležitá poznámka.}
+%Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
+
+\subsection{Etické problémy} \label{Vplyv:Etické problémy}
+
+Ako ukázala štúdia\cite{HadiMogavi2022} zneužitie gamifikácie môže spôsobiť aj etické problémy.
+
+Vo vzdelávacej aplikácii Duolingo sa vyskytujú problémy s podvádzaním. Podvádzanie funguje napríklad tak, že používateľ použije prekladač s cieľom získať čo najviac bodov, aby sa mohol umiestniť čo najvyššie v rebríčku.
+Následne sa rýchlo dostane na vysoké priečky v rebríčku. Síce prešiel všetky lekcie, ale jeho reálne vedomosti neodzrkadľujú jeho momentálnu pozíciu v rebríčku.
+
+Etický problém nastáva vtedy, keď takéto správanie potom frustruje iných používateľov, ktorý sa snažia v tejto vzdelávacej aplikácii niečo naučiť bez použitia podvodov. Nastáva potom neférovosť medzi používateľmi.
+Samozrejme všetci používatelia vzdelávacích aplikácii ju začali používať na to, aby sa niečo naučili. Niektorí však prepadli gamifikácii, ktorá ich donútila zameriavať sa viac na získavanie bodov, čiže viac na prvky gamifikácie ako na učenie.
+
+Ďalší etický problém nastáva, keď sa podporuje nevhodné správanie pri učení. Znamená to, že v aplikácii, kde je zneužitá gamifikácia sa učenie stáva druhoradým. K učeniu sa pripájajú aj ďalšie zručnosti, ktoré používaním aplikácie používateľ získa. Nie sú to len pozitívne zručnosti. Jednou z negatívnych zručností je aj schopnosť podvádzať a brať podvádzanie ako bežnú záležitosť. Takto tolerované podvody potom prerastajú aj do reálneho života.
+
+
+
+
+
+%\paragraph{Veľmi.}
+%Niekedy je potrebné za nadpisom.
+
+
+
+
+
+
+
+\section{Riešenie} \label{Riešenie}
+
+\subsection{Používatelia} \label{Riešenie:Používatelia}
+%existuju aj pouzivatelia, ktorí si uvedomuju tu gamifikaciu a kvôli nej ju nepouživaju alebo sa im nepáči
+
+\subsection{Aplikácia} \label{Riešenie:Aplikácia}
+
+
+\section{Záver} \label{zaver} % prípadne iný variant názvu
+
+Gamifikácia zlepšuje učenie. Treba nájsť rovnováhu medzi efektivitou gamifikácie a efektivitou vzdelávania na ktoré je použitá.
+O čom je článok, k čomu ste ním prispeli a čo zostáva otvorené? // do buducna %uviesť do záveru
+%\acknowledgement{Ak niekomu chcete poďakovať\ldots}
+
+
+% týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
+\bibliography{literatura}
+\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
+\end{document}
