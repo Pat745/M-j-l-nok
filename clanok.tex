@@ -9,6 +9,8 @@
 \usepackage{graphicx}
 \usepackage{url} % príkaz \url na formátovanie URL
 \usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
+\usepackage{float}
+\usepackage{subcaption}
 
 \usepackage{cite}
 %\usepackage{times}
@@ -45,7 +47,7 @@ Zneužívanie gamifikácie nastáva vtedy, keď sa používatelia príliš na ň
 
 
 \section{Úvod}
-
+tato oblast je este malo preskumana, niekde najst vetu v ktorej sa to spominalo
 
 
 %Motivujte čitateľa a vysvetlite, o čom píšete. Úvod sa väčšinou nedelí na časti.
@@ -75,14 +77,22 @@ Tento nežiaduci jav mrhá drahocenným časom používateľov a negatívne ovpl
 %
 %\begin{figure*}[tbh]
 %\centering
-%\includegraphics[scale=1.0]{diagram.pdf}
+%\includegraphics[scale=0.07]{strom1.jpg}
 %Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
+%\includegraphics[scale=0.07]{strom1.jpg}
 %\caption{Rozhodujúci argument.}
 %\label{f:rozhod}
 %\end{figure*}
 
 \section{Duolingo} \label{Duolingo}
-Duolingo je bezplatná aplikácia na učenie sa cudzích jazykov. Aplikácia ponúka množstvo jazykov. Napríklad angličtinu, španielčinu, francúzštinu, nemčinu, taliančinu, čínštinu, ruštinu, dánčinu, maďarčina, arabčinu, japončinu, holandčinu, vietnamčinu, gréčtinu, švédčinu, latinčinu, poľštinu, ukrajinčinu, rumunčina, ...\cite{Duoplanet}  
+Duolingo je bezplatná aplikácia na učenie sa cudzích jazykov. Aplikácia ponúka množstvo jazykov. Napríklad angličtinu, španielčinu, francúzštinu, nemčinu, taliančinu, čínštinu, ruštinu, dánčinu, maďarčina, arabčinu, japončinu, holandčinu, vietnamčinu, gréčtinu, švédčinu, latinčinu, poľštinu, ukrajinčinu, rumunčina, ...\cite{Duoplanet} V tabuľke 1, je zobrazený počet študentov študujúcich jednotlivé jazyky.
+
+%toto ide, ale dáva veľké medzeri
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[scale=0.7]{tabuľka1.pdf}
+%	\caption{Tabuľka 1\cite{Duoplanet}}
+%\end{figure}
 
 \subsection{Ako funguje gamifikácia v Duolingu?} \label{Duolingo:Ako funguje gamifikácia v Duolingu?}
 Duolingo ponúka svoje kurzy gamifikovanou formou. Aplikácia umožňuje sledovať pokrok používateľa vizuálne príťažlivým spôsobom\cite{HadiMogavi2022}. Jednotlivé lekcie sú tematicky zoskupené v rámci takzvaného „skill tree“ alebo zoznamu zručností, ako je znázornené na obrázku. \cite{Duolingo} %nájsť niečo lepšie
@@ -92,8 +102,42 @@ Duolingo ponúka svoje kurzy gamifikovanou formou. Aplikácia umožňuje sledova
 Čím vyššie hodnotenie používateľ získa, tým vyššie v rebríčku sa umiestni. Na druhej strane používateľ môže v rebríčku aj klesnúť. Rebríčky sa obnovujú na týždennej báze.\cite{HadiMogavi2022}
 
 
+\begin{figure}[H]
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[scale=0.07]{strom1.jpg}
+		\caption{skill tree\cite{screenshot}}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[scale=0.07]{korunky.jpg}
+		\caption{body\cite{screenshot}}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[scale=0.07]{rebricek.jpg}
+		\caption{rebríček\cite{screenshot}}
+	\end{subfigure}
+\end{figure}
+
+
+
+%\hfil\includegraphics[scale=0.08]{strom1.jpg}\hfil\includegraphics[scale=0.079]{rebricek.jpg}  
+%\caption{Obr.1}
+%\begin{figure}
+
+  %\centering
+%  \includegraphics[scale=0.07]{strom1.jpg}
+%  \caption{A picture of a gull.}
+%\end{figure}
+
+%\begin{figure}[tbh]
+%\hfil\caption{Obr.1}\hfil\caption{Obr.2}
+%\caption{Obr.1}
+%\end{figure*}
+
 %pridať potom viac obrázkov na ukázanie týchto funkcii gamifikácie
-\includegraphics[scale=0.07]{strom1.jpg} %obrázok som vytvorila ja
+%\includegraphics[scale=0.07]{strom1.jpg} %obrázok som vytvorila ja
 %\caption{Obr.1} %pozrieť vyššie v šablóne, ako to je urobené
 
 %Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
@@ -102,11 +146,11 @@ Duolingo ponúka svoje kurzy gamifikovanou formou. Aplikácia umožňuje sledova
 
 
 
-\section{Používatelia} \label{Používatelia}
+%\section{Používatelia} \label{Používatelia}
 
-\subsection{Vedome} \label{Vedome}
+%\subsection{Vedome} \label{Vedome}
 
-\subsection{Nevedome} \label{Nevedome}
+%\subsection{Nevedome} \label{Nevedome}
 %porozmýšľať nad touto časťou, či nezmeniť na dôvody zneužitia gamifikácie
 %
 
@@ -186,18 +230,44 @@ Samozrejme všetci používatelia vzdelávacích aplikácii ju začali používa
 
 
 \section{Riešenie} \label{Riešenie}
+Aj napriek tomu, že tento jav zneužitia gamifikácie je pomerne nepreskúmaný, existujú rôzné návrhy riešení ako zabrániť tomuto javu.
 
-\subsection{Používatelia} \label{Riešenie:Používatelia}
+\subsection{Rebríčky by mali zvážiť kompatibilitu používateľov} \label{Riešenie:Rebríčky by mali zvážiť kompatibilitu používateľov}
+Rebríčky môžu byť pre používateľov menej motivujúce (alebo dokonca odpudzujúce), ak nedávajú všetkým používateľom spravodlivú šancu súťažiť alebo stať sa úspešnými v gamifikovaných aspektoch aplikácie \cite{rebríčky}.
+
+
 %existuju aj pouzivatelia, ktorí si uvedomuju tu gamifikaciu a kvôli nej ju nepouživaju alebo sa im nepáči
 
-\subsection{Aplikácia} \label{Riešenie:Aplikácia}
+\subsection{Urobiť gamifikáciu v aplikáciách voliteľnú} \label{Riešenie:Urobiť gamifikáciu aplikáciách voliteľnú}
+Podľa literatúry \cite{volitelna} by malo byť možné, aby používatelia mali možnosť vybrať si, či budú alebo nebudú používať gamifikáciu na základe vlastnej vôle. Voliteľná gamifikácia by mohla tiež pomôcť používateľom lepšie sa vzdelávať \cite{volitelna}.
 
+\subsection{Je potrebné zvážiť náročnosť a dôležitosť rôznych úloh} \label{Riešenie:Je potrebné zvážiť náročnosť a dôležitosť rôznych úloh}
+Niektorí používatelia \cite{HadiMogavi2022} naznačujú, že odmeny by sa nemali prideľovať rovnako všetkým rôznym úlohám. Namiesto toho by sa mali distribuovať rozumnejšie na základe náročnosti alebo dôležitosti úloh. V opačnom prípade by odmeny mohli viesť k zaujatosti\cite{HadiMogavi2022}. 
 
+\subsection{Inteligentná detekcia zneužitia gamifikácie} \label{Riešenie:Inteligentná detekcia zneužitia gamifikácie}
+Napriek dramatickému pokroku v technikách strojového učenia a hlbokého učenia v posledných rokoch zostáva automatická detekcia zneužitia gamifikácie pomocou takýchto výpočtových modelov je náročnou úlohou\cite{HadiMogavi2022}. Raz to však bude možné aj týmto spôsobom.
+
+ 
 \section{Záver} \label{zaver} % prípadne iný variant názvu
 
 Gamifikácia zlepšuje učenie. Treba nájsť rovnováhu medzi efektivitou gamifikácie a efektivitou vzdelávania na ktoré je použitá.
 O čom je článok, k čomu ste ním prispeli a čo zostáva otvorené? // do buducna %uviesť do záveru
 %\acknowledgement{Ak niekomu chcete poďakovať\ldots}
+
+\section{Témy preberané na prednáškach} 
+
+\paragraph{Etika}
+Všade platia určité zásady etiky. Vo všetkých oblastiach života. Vo verejných sférach, v súkromných sférach, v pracovných sférach. Zákony sa postupne formovali zo zvyklostí. Etika je regulovaná pomocou Etického kódexu. Každá spoločnosť by mala mať určený svoj vlastný Etický kódex, ktorý upravuje jednotlivé oblasti v ktorých sa spoločnosť pohybuje. Profesijné združenia mávajú svoje etické kódexy napr. IEEE8, Software Engineering Code of Ethics. Podľa môjho názoru je existencia etického kódexu dôležitá, lebo uľahčuje rozhodovanie človeka o tom, čo je správne v pre neho nejasných situáciách. Predchádza konfliktom, pomáha upraviť správanie jednotlivcov či skupín v súlade so záujmom spoločnosti. Ako sa aj v prednáške spomínalo „Softwaroví inžinieri konajú v súlade s verejným záujmom. Softvéroví inžinieri musia zachovávať integritu a nezávislosť vo svojom odbornom úsudku.” Určite je existencia etického kódexu dôležitá aj v oblasti IT, kde má človek schopnosť urobiť aj veci, ktoré sú neetické, ale neurobí to, pretože sa drží nejakých etických zásad, ktoré má. 
+
+\paragraph{Inžinierska práca}
+Inžinieri aplikujú princípy vedy a matematiky na vývoj ekonomických riešení technických problémov. Ich práca je prepojením medzi vedeckými objavmi a komerčnými aplikáciami, ktoré spĺňajú potreby spoločnosti a spotrebiteľov. Mnoho inžinierov vyvíja nové produkty. \cite{Engineers} Takto nám bola predstavená inžinierska práca. Táto definícia mi objasnila, čo znamená byť inžinierom. Súhlasím s ňou, ale ešte by som doplnila, že je potrebná aj určitá dávka kreativity a predstavivosti na to, aby inžinier vedel inovatívne a efektívne vyriešiť určitý problém. Podľa môjho názoru je pre inžiniera tiež potrebná cieľavedomosť, aby vedel čo očakáva od riešenia problému, ktorý on vymyslel. Tiež si myslím, že je pre prácu inžiniera dôležitý aj všeobecný prehľad, aby vedel identifikovať ten správny problém, ktorý treba vyriešiť. Vďaka svojim vedomostiam už potom dokáže nájsť spôsob, ako veci zmeniť tak, aby fungovali lepšie a aby boli lepšie. Inžinierska práca je určite veľmi dôležitá pre spoločnosť, keďže ak je vyššie uvedené vytvárajú aj nové produkty.
+
+\paragraph{Prezentácia: slajdy a prednes}
+Prezentácia je ústny prejav prezentujúceho pred obecenstvom vo vymedzenom časovom úseku, typicky sprevádzaný premietaním slajdov. Pri prezentovaní hrá dôležitú úlohu aj neverbálny prejav. Dôležité je udržiavať očný kontakt. V rečovom prejave významnú rolu hrá intonácia.
+
+„Úroveň nadšenia publika nikdy nepresiahne úroveň nadšenia prezentujúceho.” Táto veta z prednášky mi najviac utkvela v pamäti. Začala som si to všímať na prezentáciách, ktoré som si od tej doby vypočula. Naozaj je to tak. Ak prezentujúci nemá záujem o danú tému, nebaví ho alebo s nej nie je nadšený, tak ani publikum nedokáže dostatočne efektívne prijať informácie, ktoré mu sú interpretované, aj keď sa veľmi zaujíma o danú tému.
+
+Ešte by som dodala k prezentácii, že je dobré si samostatne merať čas na vlastných stopkách, napríklad na mobile. Prezentujúci si tak vie efektívne zmanažovať čas. Vie koľko času mu ešte ostáva do konca a vie koľko času môže ešte stráviť pri jednotlivých témach na slajdoch. 
 
 
 % týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
